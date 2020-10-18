@@ -23,23 +23,8 @@ load("@com_github_danmx_bazel_tools//drone-cli:deps.bzl", "drone_dependencies")
 drone_dependencies()
 ```
 
-`BUILD.bazel` typically in the workspace root:
-
-```bzl
-load("@com_github_danmx_bazel_tools//drone-cli:def.bzl", "drone")
-
-drone(
-    name = "drone-fmt",
-    args = [
-        "fmt",
-        "--save",
-        ".drone.yml",
-    ],
-)
-```
-
 Invoke with
 
 ```console
-bazel run //:drone-fmt
+bazel run @com_github_danmx_bazel_tools//drone-cli:run -- --help
 ```
