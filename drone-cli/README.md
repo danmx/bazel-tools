@@ -18,9 +18,9 @@ git_repository(
     shallow_since = "<bla>",
 )
 
-load("@com_github_danmx_bazel_tools//drone-cli:deps.bzl", "drone_dependencies")
+load("@com_github_danmx_bazel_tools//drone-cli:deps.bzl", "drone_cli_dependencies")
 
-drone_dependencies()
+drone_cli_dependencies()
 ```
 
 Invoke with

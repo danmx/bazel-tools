@@ -18,9 +18,9 @@ git_repository(
     shallow_since = "<bla>",
 )
 
-load("@com_github_danmx_bazel_tools//golangci-lint:deps.bzl", "golangci_lint_deps")
+load("@com_github_danmx_bazel_tools//golangci-lint:deps.bzl", "golangci_lint_dependencies")
 
-golangci_lint_deps()
+golangci_lint_dependencies()
 ```
 
 Invoke with
