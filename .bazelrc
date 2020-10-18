@@ -10,7 +10,6 @@ build --stamp
 # Make /tmp hermetic
 build --sandbox_tmpfs_path=/tmp
 
-# Ensure that Bazel never runs as root, which can cause unit tests to fail.
 build --sandbox_fake_username
 
 test:unit --build_tests_only
