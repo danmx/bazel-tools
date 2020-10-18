@@ -18,27 +18,13 @@ git_repository(
     shallow_since = "<bla>",
 )
 
-load("@com_github_danmx_bazel_tools//golangci-lint:deps.bzl", "drone_dependencies")
+load("@com_github_danmx_bazel_tools//golangci-lint:deps.bzl", "golangci_lint_dependencies")
 
-drone_dependencies()
-```
-
-`BUILD.bazel` typically in the workspace root:
-
-```bzl
-load("@com_github_danmx_bazel_tools//golangci-lint:def.bzl", "golangci_lint")
-
-golangci_lint(
-    name = "lint",
-    args = [
-        "run",
-        "./...",
-    ],
-)
+golangci_lint_dependencies()
 ```
 
 Invoke with
 
 ```console
-bazel run //:lint
+bazel run @com_github_danmx_bazel_tools//golangci-lint:run -- --help
 ```

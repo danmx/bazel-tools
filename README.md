@@ -30,4 +30,4 @@ bazelisk sync
 
 ## Considerations
 
-Some tools were inspired by [atlassian/bazel-tools](https://github.com/atlassian/bazel-tools) and/or copied from [Kubernetes](https://github.com/kubernetes/kubernetes).
+`run_in_workspace` was copied from [Kubernetes](https://github.com/kubernetes/kubernetes).
