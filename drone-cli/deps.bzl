@@ -9,8 +9,8 @@ def drone_cli_dependencies():
     )
     http_archive(
         name = "drone-darwin-amd64",
-        urls = ["https://github.com/drone/drone-cli/releases/download/v1.2.2/drone_darwin_amd64.tar.gz"],
-        sha256 = "73f96ad0a9f3038463a86408b231b80758e64aa4ce85534933d85ee718ae096c",
+        urls = ["https://github.com/drone/drone-cli/releases/download/v1.2.4/drone_darwin_amd64.tar.gz"],
+        sha256 = "2612ef310495df4e73c2d14a60967df1f9349e69b684bff3ef0a75ab5da2edae",
         build_file = "@com_github_danmx_bazel_tools//drone-cli:drone.BUILD",
     )
     http_archive(
