@@ -15,7 +15,7 @@ def drone_cli_dependencies():
     )
     http_archive(
         name = "drone-windows-amd64",
-        urls = ["https://github.com/drone/drone-cli/releases/download/v1.2.4/drone_windows_amd64.tar.gz"],
-        sha256 = "330bf00e1409d80760b0e90f6758442e66281ace3bd17ece8dddcb3aaa8c7965",
+        urls = ["https://github.com/drone/drone-cli/releases/download/v1.4.0/drone_windows_amd64.tar.gz"],
+        sha256 = "85e6738ee5ba43b3bdc4ce956a1ded55257383976f34e536f43ba1c15e2309a5",
         build_file = "@com_github_danmx_bazel_tools//drone-cli:drone_windows.BUILD",
     )
