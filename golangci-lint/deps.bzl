@@ -10,10 +10,10 @@ def golangci_lint_dependencies():
     )
     http_archive(
         name = "golangci-lint-darwin-amd64",
-        urls = ["https://github.com/golangci/golangci-lint/releases/download/v1.42.1/golangci-lint-1.42.1-darwin-amd64.tar.gz"],
-        sha256 = "9c0042e91218dc1dd4eb7b54e29c7331eff081b3ac3f88b0d5df89b976fcd45c",
+        urls = ["https://github.com/golangci/golangci-lint/releases/download/v1.53.2/golangci-lint-1.53.2-darwin-amd64.tar.gz"],
+        sha256 = "a4e83f5bfe52f42134c9783aa68ba31104c36e2ad4c221a3c77510dda66ae81c",
         build_file = "@com_github_danmx_bazel_tools//golangci-lint:golangci-lint.BUILD",
-        strip_prefix = "golangci-lint-1.42.1-darwin-amd64",
+        strip_prefix = "golangci-lint-1.53.2-darwin-amd64",
     )
     http_archive(
         name = "golangci-lint-windows-amd64",
