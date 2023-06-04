@@ -9,8 +9,8 @@ def git_chglog_dependencies():
     )
     http_archive(
         name = "git-chglog-darwin-amd64",
-        urls = ["https://github.com/git-chglog/git-chglog/releases/download/v0.15.0/git-chglog_0.15.0_darwin_amd64.tar.gz"],
-        sha256 = "286497fb978e1ed70c7a9a1076ee47060547e2a8230b0f1a0d566b112a338e99",
+        urls = ["https://github.com/git-chglog/git-chglog/releases/download/v0.15.4/git-chglog_0.15.4_darwin_amd64.tar.gz"],
+        sha256 = "5cd320f82138413b2a21e63346532588f5d4f2ca1ca5c523ef43883de8115e73",
         build_file = "@com_github_danmx_bazel_tools//git-chglog:git-chglog.BUILD",
     )
     http_archive(
