@@ -15,7 +15,7 @@ def git_chglog_dependencies():
     )
     http_archive(
         name = "git-chglog-windows-amd64",
-        urls = ["https://github.com/git-chglog/git-chglog/releases/download/v0.15.0/git-chglog_0.15.0_windows_amd64.zip"],
-        sha256 = "d44ca8282c547c5e02529e10a4fcc11ff00d149b6d2c411ae6cb1b3b1b44ecb4",
+        urls = ["https://github.com/git-chglog/git-chglog/releases/download/v0.15.4/git-chglog_0.15.4_windows_amd64.zip"],
+        sha256 = "0e7e9421565714f56885f068ae434416a6a3177b6ff65f350afe580e201289a6",
         build_file = "@com_github_danmx_bazel_tools//git-chglog:git-chglog_windows.BUILD",
     )
