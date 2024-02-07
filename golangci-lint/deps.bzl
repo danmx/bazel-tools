@@ -3,10 +3,10 @@ load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 def golangci_lint_dependencies():
     http_archive(
         name = "golangci-lint-linux-amd64",
-        urls = ["https://github.com/golangci/golangci-lint/releases/download/v1.55.2/golangci-lint-1.55.2-linux-amd64.tar.gz"],
-        sha256 = "ca21c961a33be3bc15e4292dc40c98c8dcc5463a7b6768a3afc123761630c09c",
+        urls = ["https://github.com/golangci/golangci-lint/releases/download/v1.56.0/golangci-lint-1.56.0-linux-amd64.tar.gz"],
+        sha256 = "3a6343a67ad1b682f351fe96621670e149dd2bcd11c1fd3e8b654030d39f8ebf",
         build_file = "@com_github_danmx_bazel_tools//golangci-lint:golangci-lint.BUILD",
-        strip_prefix = "golangci-lint-1.55.2-linux-amd64",
+        strip_prefix = "golangci-lint-1.56.0-linux-amd64",
     )
     http_archive(
         name = "golangci-lint-darwin-amd64",
