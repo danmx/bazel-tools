@@ -17,8 +17,8 @@ def golangci_lint_dependencies():
     )
     http_archive(
         name = "golangci-lint-windows-amd64",
-        urls = ["https://github.com/golangci/golangci-lint/releases/download/v1.55.2/golangci-lint-1.55.2-windows-amd64.zip"],
-        sha256 = "f57d434d231d43417dfa631587522f8c1991220b43c8ffadb9c7bd279508bf81",
+        urls = ["https://github.com/golangci/golangci-lint/releases/download/v1.56.0/golangci-lint-1.56.0-windows-amd64.zip"],
+        sha256 = "1b0b497b6b41965cd0737f3f1d665d5d820df4a5dd82d8e28c1ab4cbd546520a",
         build_file = "@com_github_danmx_bazel_tools//golangci-lint:golangci-lint_windows.BUILD",
-        strip_prefix = "golangci-lint-1.55.2-windows-amd64",
+        strip_prefix = "golangci-lint-1.56.0-windows-amd64",
     )
